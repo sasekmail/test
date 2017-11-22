@@ -1,9 +1,18 @@
 pierwszywpis1
 drugikjkjl22
 
+
+
 klkklklk
 @FindBy test
 jeden dwa trzy
+@FindBy
+hjhkhjhkhj
+
+@FindBy
+nn,nm,n,mn
+
+
 
 
 ghgjhgjhgjhg
