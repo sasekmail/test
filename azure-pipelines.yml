@@ -6,12 +6,18 @@
 trigger:
 - master
 
+stages:
+- stage: A
+  jobs:
+  - job: A1
+    steps:
+    - script: echo Hello, world!
+    displayName: 'Run a one-line script'
+  - job: A2
 
-steps:
-- script: echo Hello, world!
-  displayName: 'Run a one-line script'
+- stage: B
+  jobs:
+  - job: B1
 
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
+
+
