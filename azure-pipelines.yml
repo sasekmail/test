@@ -9,7 +9,9 @@ trigger:
 stages:
 - stage: A
   jobs:
+ 
   - job: A1
+    pool: Default
     steps:
     - bash: echo "Hello, world!""
       displayName: 'Run a one-line script'
