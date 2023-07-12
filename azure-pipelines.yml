@@ -13,9 +13,10 @@ stages:
   - job: A1
     pool: Azure Pipelines
     steps:
-    - bash: echo "Hello, world!""
+    - bash: echo "Hello, world!"
       displayName: 'Run a one-line script'
   - job: A2
+    pool: Azure Pipelines
     steps:
     - task: Bash@3
       inputs:
@@ -28,6 +29,7 @@ stages:
 - stage: B
   jobs:
   - job: B1
+    pool: Azure Pipelines
     steps:
       - bash: echo "Hello, world!""
         displayName: 'Run a one-line script'
